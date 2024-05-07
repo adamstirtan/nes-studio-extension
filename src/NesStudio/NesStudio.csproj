@@ -14,5 +14,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Extensibility.Sdk" Version="17.9.2092" />
     <PackageReference Include="Microsoft.VisualStudio.Extensibility.Build" Version="17.9.2092" />
+    <PackageReference Include="Microsoft.VisualStudio.Shell.Interop" Version="17.9.37000" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2478.35" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="NesEmulatorControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
   </ItemGroup>
 </Project>
