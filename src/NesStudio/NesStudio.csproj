@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Key.snk" />
+    <Content Include="WebAssets\smb3.nes" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
@@ -79,6 +80,8 @@
     <VSCTCompile Include="EmulatorWindowPackage.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>
+    <EmbeddedResource Include="WebAssets\index.html" />
+    <Content Include="WebAssets\jsnes.js" />
     <Content Include="Resources\EmulatorWindowCommand.png" />
     <Content Include="Resources\EmulatorWindowPackage.ico" />
   </ItemGroup>

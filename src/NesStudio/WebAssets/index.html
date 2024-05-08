@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NES Studio</title>
+    <script src="jsnes.js"></script>
+</head>
+
+<body>
+    <canvas id="nes-screen" width="640" height="480"></canvas>
+    <script>
+        var nes = new jsnes.NES();
+
+        fetch('smb3.nes')
+            .then(response => response.arrayBuffer())
+            .then(romData => {
+                nes.loadROM(new Uint8Array(romData));
+            })
+            .catch(error => console.error('Error loading ROM:', error));
+    </script>
+</body>
+
+</html>
